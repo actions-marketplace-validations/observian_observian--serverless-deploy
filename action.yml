@@ -19,7 +19,7 @@ inputs:
     required: false
 runs:
   using: docker
-  image: docker://ghcr.io/observian/serverless-deploy:0.1
+  image: docker://ghcr.io/observian/observian--serverless-deploy:0.1
 branding:
   icon: arrow-left-circle
   color: green
