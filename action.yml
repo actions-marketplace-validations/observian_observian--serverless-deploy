@@ -8,9 +8,6 @@ inputs:
   secret_access_key:
     description: The AWS secret access key
     required: true
-  account_id:
-    description: AWS Account ID
-    required: true
   region:
     description: The AWS region you're deploying to
     required: true
@@ -19,7 +16,7 @@ inputs:
     required: false
 runs:
   using: docker
-  image: docker://ghcr.io/observian/observian--serverless-deploy:0.1
+  image: docker://ghcr.io/observian/observian--serverless-deploy:0.2
 branding:
   icon: arrow-left-circle
   color: green

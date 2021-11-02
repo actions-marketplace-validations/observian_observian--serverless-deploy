@@ -6,8 +6,6 @@ function main() {
     validate "${INPUT_ACCESS_KEY_ID}" "access_key_id"
     validate "${INPUT_SECRET_ACCESS_KEY}" "secret_access_key"
     validate "${INPUT_REGION}" "region"
-    validate "${INPUT_ACCOUNT_ID}" "account_id"
-    validate "${INPUT_EKS_CLUSTER_NAME}" "eks_cluster_name"
 
     echo "inputs are valid"
     echo "setting up env variables for the build"
