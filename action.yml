@@ -1,0 +1,25 @@
+name: serverless AWS
+author: Observian
+description: Create Docker image from code and run serverless deploy
+inputs:
+  access_key_id:
+    description: The AWS access key id
+    required: true
+  secret_access_key:
+    description: The AWS secret access key
+    required: true
+  account_id:
+    description: AWS Account ID
+    required: true
+  region:
+    description: The AWS region you're deploying to
+    required: true
+  plugins:
+    description: comma-separated values for plugin names to be installed before the deploy is run
+    required: false
+runs:
+  using: docker
+  image: docker://ghcr.io/observian/serverless-deploy:0.1
+branding:
+  icon: arrow-left-circle
+  color: green
