@@ -1,4 +1,4 @@
-name: serverless AWS
+name: Observian-serverless-AWS
 author: Observian
 description: Create Docker image from code and run serverless deploy
 inputs:
