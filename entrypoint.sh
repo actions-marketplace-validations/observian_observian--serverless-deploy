@@ -24,7 +24,7 @@ function main() {
         echo "$done"
     done
 
-    serverless deploy
+    serverless deploy -c $INPUT_CONFIG_FILE
 }
 
 function validate() {

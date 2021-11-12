@@ -14,9 +14,13 @@ inputs:
   plugins:
     description: comma-separated values for plugin names to be installed before the deploy is run
     required: false
+  config_file:
+    description: the name of the serverless deploy file.  Defaults to serverless.yml
+    required: false
+    default: serverless.yml
 runs:
   using: docker
-  image: docker://ghcr.io/observian/observian--serverless-deploy:0.2
+  image: docker://ghcr.io/observian/observian--serverless-deploy:0.3
 branding:
   icon: arrow-left-circle
   color: green
